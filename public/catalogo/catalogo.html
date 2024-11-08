@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!---->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="css/styleCatalogo.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onload="cargarLosLibros(), cargarLasCategorias()">
+    <header>
+        <section id="header-section">
+            <img src="../otros/log1.jpg" alt="logo.jpeg">
+            <h1>Libreria</h1>
+            <p>Home</p>
+            <p>Catalogo</p>
+            <p>Atención al Cliente</p>
+            <input type="button" value="Iniciar Sesión">
+        </section>
+    </header>
+    <main id="main-conteiner">
+        <div id="izquierda">
+            <section id="catalogo-uno">
+                <input type="text" name="Buscar" placeholder="     Buscar libro">
+                <input type="submit" value="Buscar">
+            </section>
+            <section id="catalogo-dos">
+                <h2>Categorias</h2>
+                <article id="catalogo-dos-cates">
+                </article>
+            </section>
+        
+        <section id="catalogo-tres" >
+        </section>
+        <button class="boton-flotante"> <i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+    </main>
+    <footer id="footer">
+        <div id="footer-div">
+            <p>@2024 VIBES Libreria. All Rights Reserves</p>
+            <img src="../otros/log2.jpg" alt="logo.png">
+            <section id="footer-section">
+                <p>Horarios de Atencion</p>
+                <p>Atencion al Cliente</p>
+                <p>¿Quienes somos?</p>
+            </section>
+        </div>
+    </footer>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>

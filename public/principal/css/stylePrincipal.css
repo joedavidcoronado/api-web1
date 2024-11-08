@@ -1,0 +1,743 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*Para telefonos*/
+@media screen and (max-width: 767px) {  
+    body{
+        background-image: url(../../otros/ajaj.jpg);
+    }
+
+    header{
+        background-color: #000000;
+    }
+
+    #headerDiv{
+        color: #ebebeb;
+        width: 375px;
+        height: 60px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #headerDiv input{
+        width: 90px;
+        height: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 9px;
+        color: rgb(0, 0, 0);
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+
+    #headerDiv h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 19px;
+        margin-right: 60px
+    }
+
+    #headerDiv p{
+        display: none;
+    }
+
+    #headerDiv p::after {
+        content: " | "; 
+        margin-left: 3px;
+        margin-right: 3px;
+        color: lightgray; 
+    }
+
+    #headerDiv img{
+        width: 35%;
+    }
+
+
+    #principal{
+        width: 375px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #principal-uno{
+        margin: 30px 14px;
+    }
+
+    #principal-uno h1{
+        font-family:  "Montserrat", sans-serif;
+        color: #ffffff;
+        font-size: 55px;
+        margin-bottom: 26px;
+    }
+
+    #principal-uno hr{
+        display: none;
+    }
+
+    #principal-uno p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 14px;
+        background-color: #000000;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #principal-uno div{
+        display: flex;
+        justify-content: center;
+    }
+
+    #principal-uno input{
+        height: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin: 0px 10px 20px 10px;
+        border-radius: 3px;
+    }
+
+
+    #principal-dos{
+        width: 340px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1b1b1b;
+        margin-bottom: 26px;
+        border-radius: 5px;
+    }
+
+    #principal-dos #salvador{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #principal-dos-fotos{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #principal-dos h2{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+
+    #principal-dos-fotos img{
+        width: 75%;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    #principal-dos-nombres{
+        display: flex;
+        flex-direction: column;
+        width: 60px;
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 23px;
+        font-weight: normal;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        padding-top: 13px;
+    }
+
+    #principal-tres{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../../otros/descarga.jpeg);
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+        border-radius: 6px;
+        color: #333333;
+        margin: 0 auto;
+    }
+
+    #principal-tres section{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 14px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #principal-tres section::after{
+        content: "___________________________";
+        color: #ebebeb;
+        margin: 8px 0px;
+    }
+
+    .principal-tres-contenido h1{
+        font-family:  "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+        margin: 7px 0px;
+    }
+
+    .principal-tres-contenido p,
+    .principal-tres-contenido h3{
+        font-family:  "Montserrat", sans-serif;
+        font-size: 24px;
+        text-align: center; 
+        margin: 7px 0px;    
+    }
+
+
+    #footer{
+        background-color: #000000;
+        height: 250px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 340px;
+        display: flex;
+        margin: 0px auto;
+        align-items: center;
+        flex-direction: column;
+        color: #ebebeb;
+    }
+
+    #footer-div img{
+        width: 65%;
+        margin: 0px 23px;
+    }
+
+    #footer-div p{
+        margin-top: 20px;
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 7px;
+    }
+
+    #footer-div::after{
+        content: "___________________";
+        color: #ebebeb;
+    }
+
+    #footer-section p{
+        text-align: center;
+    }
+}
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*Para Tablets*/
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url(../../otros/martin-martz-wr9mf7S6bRQ-unsplash.jpg);
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+    }
+
+    header{
+        background-color: #000000;
+    }
+
+    #headerDiv{
+        color: #ebebeb;
+        width: 684px;
+        height: 70px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #headerDiv input{
+        width: 90px;
+        height: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 9px;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+
+    #headerDiv h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 26px;
+        margin-right: 40px
+    }
+
+    #headerDiv p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    #headerDiv p::after {
+        content: " | "; 
+        margin-left: 3px;
+        margin-right: 3px;
+        color: lightgray; 
+    }
+
+    #headerDiv img{
+        width: 20%;
+    }
+
+
+    #principal{
+        width: 684px;
+        margin: 25px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #principal-uno h1{
+        font-family:  "Montserrat", sans-serif;
+        color: #ffffff;
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+
+    #principal-uno hr{
+        margin-bottom: 37px;
+    }
+
+    #principal-uno p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #principal-uno input{
+        height: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        border-radius: 5px;
+    }
+    
+
+    #principal-dos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1b1b1b;
+        margin-bottom: 36px;
+        border-radius: 10px;
+    }
+
+    #principal-dos-fotos{
+        width: 590px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #principal-dos h2{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 18px;
+    }
+
+    #principal-dos-fotos img{
+        width: 22%;
+        border-radius: 4px;
+    }
+
+    #principal-dos-nombres{
+        width: 590px;
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 12px;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 10px;
+    }
+
+    #principal-tres{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-image: url(../../otros/descarga.jpeg);
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+        border-radius: 6px;
+        color: #333333;
+    }
+
+    #principal-tres section{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 14px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .principal-tres-contenido h1{
+        font-family:  "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 33px;
+        margin: 7px 0px;
+    }
+
+    .principal-tres-contenido p,
+    .principal-tres-contenido h3{
+        font-family:  "Montserrat", sans-serif;
+        font-size: 15px;
+        text-align: center; 
+        margin: 7px 0px;    
+    }
+
+
+    #footer{
+        background-color: #000000;
+        height: 76px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 684px;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        color: #ebebeb;
+    }
+
+    #footer-div *{
+        margin: 7px 4px;
+    }
+
+    #footer-div img{
+        width: 13%;
+        margin: 0px 23px;
+    }
+
+    #footer-div p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 7px;
+    }
+
+
+    
+}
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*Para Desktop*/
+@media screen and (min-width: 1024px){ 
+
+    body{
+        background-image: url(../../otros/martin-martz-wr9mf7S6bRQ-unsplash.jpg);
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+    }
+
+    header{
+        background-color: #000000;
+        
+    }
+
+    #headerDiv{
+        color: #ebebeb;
+        width: 940px;
+        height: 90px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #headerDiv input{
+        width: 120px;
+        height: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+
+    #headerDiv h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        margin-right: 80px
+    }
+
+    #headerDiv p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+
+    #headerDiv p::after {
+        content: " | "; 
+        margin-left: 15px;
+        margin-right: 15px;
+        color: lightgray; 
+    }
+
+    #headerDiv img{
+        width: 20%;
+    }
+
+
+    #principal-dos-fotos img{
+        width: 10%;
+    }
+
+    #principal{
+        width: 940px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #principal-uno h1{
+        font-family:  "Montserrat", sans-serif;
+        color: #ffffff;
+        font-size: 80px;
+        margin-bottom: 30px;
+    }
+    #principal-uno hr{
+        margin-bottom: 50px;
+    }
+
+    #principal-uno p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #principal-uno input{
+        height: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin-right: 10px;
+        margin-bottom: 60px;
+        border-radius: 5px;
+    }
+
+    #principal-dos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1b1b1b;
+        margin-bottom: 50px;
+        border-radius: 20px;
+    }
+
+    #principal-dos-fotos{
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #principal-dos-fotos::before{
+        font-weight: bolder;
+        font-size: 20px;
+        content: "<";
+        color: #ffffff;
+        margin-top: 80px;
+    }
+
+    #principal-dos-fotos::after{
+        font-weight: bolder;
+        font-size: 20px;
+        content: ">";
+        color: #ffffff;
+        margin-top: 80px;
+    }
+
+    #principal-dos h2{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #principal-dos-fotos img{
+        width: 22%;
+        border-radius: 6px;
+    }
+
+    #principal-dos-nombres{
+        width: 800px;
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #principal-tres{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-image: url(../../otros/descarga.jpeg);
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+        border-radius: 10px;
+        color: #333333;
+    }
+
+    #principal-tres section{
+        margin: 0px 20px;
+        display: block;
+        
+    }
+
+    .principal-tres-contenido h1{
+        font-family:  "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .principal-tres-contenido p,
+    .principal-tres-contenido h3{
+        font-family:  "Montserrat", sans-serif;
+        text-align: left;
+        font-size: 19px;
+        margin: 14px 0px; 
+    }
+
+    .principal-tres-contenido::before {
+        content: " | "; 
+        font-size: 40px;
+        color: rgb(245, 245, 245);
+    }
+
+
+    #footer{
+        background-color: #000000;
+        height: 90px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 940px;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        color: #ebebeb;
+    }
+
+    #footer-div *{
+        margin: 10px 6px;
+    }
+
+    #footer-div img{
+        width: 15%;
+        margin: 0px 30px;
+    }
+
+    #footer-div p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+}

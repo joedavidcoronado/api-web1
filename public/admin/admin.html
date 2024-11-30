@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!---->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onload="cargarLosLibros(), cargarLasCategorias(), getUsuario()">
+    <header>
+        <section id="header-section">
+            <img src="../otros/log1.jpg" alt="logo.jpeg">
+            <h1>Administrador</h1>
+        </section>
+    </header>
+    <main id="main-conteiner">
+        <div id="izquierda">
+            <section id="catalogo-uno">
+                <input type="text" name="Buscar" placeholder="     Buscar libro" id="inputBuscar">
+                <input type="submit" value="Buscar" onclick="buscarLibro()">
+            </section>
+            <section id="catalogo-dos">
+                <h2>Categorias</h2>
+                <article id="catalogo-dos-cates">
+                </article>
+            </section>
+        <section id="catalogo-tres" >
+        </section>
+        <button class="boton-flotante3" onclick="addCategoria()"> <i class="fa-solid fa-ellipsis"></i></button>
+        <button class="boton-flotante" onclick="addLibro()"> <i class="fa-solid fa-add"></i></button>
+        <button class="boton-flotante2" onclick="verFacturas()"> <i class="fa-solid fa-list"></i></button>
+    </div>
+    </main>
+    <footer id="footer">
+        <div id="footer-div">
+            <p>@2024 VIBES Libreria. All Rights Reserves</p>
+            <img src="../otros/log2.jpg" alt="logo.png">
+        </div>
+    </footer>
+    <script src="admin.js"></script>
+</body>
+</html>

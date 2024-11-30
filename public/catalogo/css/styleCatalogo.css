@@ -40,14 +40,16 @@
         font-family: "Montserrat", sans-serif;
         font-weight: normal;
         font-size: 19px;
-        margin-right: 60px
+        margin-right: 20px
     }
 
-    #header-section p{
+    #header-section a{
         display: none;
+        text-decoration: none;
+        color: inherit
     }
 
-    #header-section p::after {
+    #header-section .p::after {
         content: " | "; 
         margin-left: 3px;
         margin-right: 3px;
@@ -56,6 +58,20 @@
 
     #header-section img{
         width: 35%;
+    }
+
+    .UsuarioInfo{
+        font-size: 13px;
+        color:#dd9611;
+        text-align: right;
+        margin: 0;
+        margin-right: 10px;
+        font-family: 'Monserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    #iconoUsuario{
+        margin-right: 15px;
     }
 
 
@@ -109,7 +125,7 @@
     #catalogo-dos article{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         padding: 0 05px;
     }
 
@@ -252,9 +268,7 @@
         border-radius: 50px;
         padding: 15px 20px;
         font-size: 16px; 
-        font-family:  "Montserrat", sans-serif;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-        transition: background-color 0.3s;
     }
 
 
@@ -310,25 +324,41 @@
         font-family: "Montserrat", sans-serif;
         font-weight: normal;
         font-size: 26px;
-        margin-right: 40px
+        margin-right: 16px
     }
 
-    #header-section p{
+    #header-section a{
         display: block;
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
         font-size: 13px;
+        text-decoration: none;
+        color: inherit
     }
 
-    #header-section p::after {
+    #header-section .p::after {
         content: " | "; 
-        margin-left: 3px;
-        margin-right: 3px;
+        margin-left: 2px;
+        margin-right: 2px;
         color: lightgray; 
     }
 
     #header-section img{
         width: 20%;
+    }
+
+    .UsuarioInfo{
+        font-size: 13px;
+        color:#dd9611;
+        text-align: right;
+        margin: 0;
+        margin-right: 10px;
+        font-family: 'Monserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    #iconoUsuario{
+        margin-right: 7px;
     }
 
 
@@ -591,12 +621,14 @@
         margin-right: 80px
     }
 
-    #header-section p{
+    #header-section a{
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
+        text-decoration: none;
+        color: inherit
     }
 
-    #header-section p::after {
+    #header-section .p::after {
         content: " | "; 
         margin-left: 15px;
         margin-right: 15px;
@@ -607,6 +639,23 @@
         width: 20%;
     }
 
+    #usuarioDiv{
+        justify-content: right;
+        align-items: center;
+    }
+
+    .UsuarioInfo{
+        color: #dd9611;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+        font-weight: 700;
+    }
+
+    #iconoUsuario{
+        font-size: 170%;
+    }
 
     #main-conteiner{
         display: flex;
@@ -750,6 +799,19 @@
         border: 0px;
         margin: 7px 07px;
         border-radius: 3px;
+    }
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        font-family: 'Monserrat', sans-serif;
+    }
+
+    #contenedor img{
+        width: 36%;
     }
 
     

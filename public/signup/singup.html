@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Vibre Libreria</title>
+    <link rel="stylesheet" href="css/singup.css">
+</head>
+<body>
+    <section id="mayor-container">
+        <article id="mayor-container-articulo">
+            <img src="../otros/log2.jpg" alt="imagenLogo.jpg">
+            <h2>Tu mejor opcion de compra virtual</h2>
+        </article>
+        <div class="signup-container">
+            <h2>¡Bienvenido a VIBES Liberia!</h2>
+            <div>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+                <div class="msg-error" id="msg-error-nombre" style="display: none"></div>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                <div class="msg-error" id="msg-error-email1" style="display: none"></div>
+                <div class="msg-error" id="msg-error-email2" style="display: none"></div>
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                <div class="msg-error" id="msg-error-password" style="display: none"></div>
+                <input type="text" id="nit" name="nit" placeholder="NIT">
+                <div class="msg-error" id="msg-error-nit" style="display: none"></div>
+                <input type="text" id="direccion" name="direccion" placeholder="Direccion">
+                <div class="msg-error" id="msg-error-direccion" style="display: none"></div>
+                <input type="submit" value="Iniciar" onclick="iniciarSesion()">
+            </div>
+            <a href="../login/login.html" class="olvidaste-password">¿Ya tienes cuenta? Haz click aqui</a>
+        </div>
+    </section>
+    <script src="js/singup.js"></script>
+</body>
+</html>

@@ -1,8 +1,6 @@
 const repositorioUsuario = require('../repositories/usuarioRepository');
 const repositorioPedido = require('../repositories/pedidoRepository');
 
-let id_usuario;
-
 exports.login = async (req, res) => {
     const {correo, contrasena} = req.body;
     try {
@@ -17,7 +15,6 @@ exports.login = async (req, res) => {
 
         delete user.contrasena;
         const pedido = await repositorioPedido.insertPedido(user.id_usuario);
-        id_usuario = user.id_usuario;
         if(pedido === null){
             return res.status(401).json("Fallo al crear el pedido");
         }
@@ -29,10 +26,10 @@ exports.login = async (req, res) => {
 };
 
 exports.singup = async (req, res) => {
-    const user = req.body
+    const user = req.body;
     try {
         const usuario = await repositorioUsuario.insertNewUser(user);
-        res.json({ message: "Usuario creado exitosamente", usuario });
+        res.json(user);
         const pedido = await repositorioPedido.insertPedido(user.id_usuario);
         id_usuario = user.id_usuario;
         if(pedido === null){
@@ -44,16 +41,26 @@ exports.singup = async (req, res) => {
     }
 };
 
-exports.facturas = async (req, res) => {
+exports.carrito = async (req, res) => {
+    const id_user = req.params.id_user;
     try {
-        if(id_usuario==null){
-            res.status(400).json("Inicie sesion o registrese");
-        }
-        const pedidosHechos = await repositorioUsuario.getFacturas(id_usuario);
+        const pedidosHechos = await repositorioUsuario.getCarrito(id_user);
         const pedisosHechosFiltrado = pedidosHechos.rows;
         res.json(pedisosHechosFiltrado);
     } catch (error) {
        console.error(error);
-       res.status(500).json("Hubo un error al buscar las facturas");
+       res.status(500).json({ error: "Hubo un error al buscar el libro." });
+    }
+};
+
+exports.facturas = async (req, res) => {
+    const id_user = req.params.id_user;
+    try {
+        const pedidosHechos = await repositorioUsuario.getFacturas(id_user);
+        const pedisosHechosFiltrado = pedidosHechos.rows;
+        res.json(pedisosHechosFiltrado);
+    } catch (error) {
+       console.error(error);
+       res.status(500).json({ error: "Hubo un error al buscar las facturas." });
     }
 };

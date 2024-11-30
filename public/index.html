@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
     <link rel="stylesheet" href="principal/css/stylePrincipal.css" />
-    <link rel="stylesheet" href="../normalize.css" />
-    <script src="principal/js/principal.js"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body onload="getMasVendidosSc(), getUsuario()">
     <header>
         <div id="headerDiv">
             <img src="otros/log1.jpg" alt="logo.jpeg">
-            <h1>Libreria</h1>
-            <p>Home</p>
-            <p>Catalogo</p>
-            <p>Atención al Cliente</p>
-            <input type="button" value="Iniciar Sesión">
+            <a><p class="p">Home</p></a>
+            <a href="catalogo/catalogo.html"><p class="p">Catálogo</p></a>
+            <a href="attCliente/attCliente.html"><p class="p">Atención al Cliente</p></a>
+            <input type="button" value="Iniciar Sesión" onclick="iniciarSesion()">
         </div>
     </header>
         <section id="principal">
@@ -33,16 +32,8 @@
                 <h2>Los mas vendidos</h2>
                 <div id="salvador">
                     <div id="principal-dos-fotos">
-                        <img src="img/foto1.jpg" alt="foto1">
-                        <img src="img/foto2.jpg" alt="foto2">
-                        <img src="img/foto3.jpg" alt="foto3">
-                        <img src="img/foto4.jpg" alt="foto4">
                     </div>
                     <div  id="principal-dos-nombres">
-                        <p>Crasiar: Un Viaje Eterno</p>
-                        <p>PIQHILN II</p>
-                        <p>La Santa Biblia</p>
-                        <p>Corravis Afeailia</p>
                     </div>
                 </div>
             </article>
@@ -75,5 +66,6 @@
                 </section>
             </div>
         </footer>
+        <script src="principal/js/principal.js"></script>
 </body>
 </html>

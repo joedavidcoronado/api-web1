@@ -31,7 +31,19 @@ exports.getLibroByIdRepo = async (id_libro) => {
 
     try {
         const res = await client.query('SELECT * FROM libro where id_libro = $1', [id_libro]);
+        return res.rows[0];;
+    } catch (err) {
+        console.error('Error en la consulta:', err);
+        throw err;
+    }
+};
 
+
+exports.getLibroByTituloRepo = async (titulo_libro) => {
+    const client = await getConnection();
+
+    try {
+        const res = await client.query('SELECT * FROM libro WHERE titulo LIKE $1', [`%${titulo_libro}%`]);
         if (res.rows.length === 0) {
             return null;
         }
@@ -60,10 +72,22 @@ exports.getLibrosByCategoryRepo = async (id_categoria) => {
 
  exports.getCategorysRepo = async () => {
     const client = await getConnection();
-
     try {
         const res = await client.query('SELECT * FROM categoria');
+        if (res.rows.length === 0) {
+            return null;
+        }
+        return res;
+    } catch (err) {
+        console.error('Error en la consulta:', err);
+        throw err;
+    }
+};
 
+exports.getMasVendidosRepo = async () => {
+    const client = await getConnection();
+    try {
+        const res = await client.query('SELECT * FROM obtener_libros_con_mas_stock()');
         if (res.rows.length === 0) {
             return null;
         }

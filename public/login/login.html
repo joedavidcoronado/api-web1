@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Vibre Libreria</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../normalize.css">
+</head>
+<body>
+    <section id="mayor-container">
+        <article id="mayor-container-articulo">
+            <img src="../otros/log2.jpg" alt="imagenLogo.jpg">
+            <h2>Tu mejor opcion de compra virtual</h2>
+        </article>
+        <div class="login-container">
+            <h2>Iniciar sesión</h2>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Correo electrónico">
+                    <div class="msg-error" id="msg-error-email1" style="display: none"></div>
+                    <div class="msg-error" id="msg-error-email2" style="display: none"></div>
+                <input type="password" id="password" name="password" placeholder="Contraseña">
+                <div class="msg-error" id="msg-error-inicio" style="display: none"></div>
+                <input type="submit" value="Iniciar" onclick="iniciarSesion()">
+            </div>
+            <a href="../signup/singup.html" class="olvidaste-password">¿No tienes cuenta? Registrate Aqui</a> 
+        </div>
+    </section>
+    <footer class="footer">
+        <p>©2024 - Vibes Liberia</p>
+        <p><a href="../index.html">Home</a> | <a href="../catalogo/catalogo.html">Catalogo</a> | <a href="../">Atención al Cliente</a></p> 
+    </footer>
+    <script src="js/login.js"></script>
+</body>
+</html>

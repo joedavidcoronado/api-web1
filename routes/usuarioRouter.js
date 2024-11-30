@@ -9,7 +9,10 @@ router.post('/login', usuarioController.login);
 // GET api/usuario/singup
 router.post('/singup', usuarioController.singup);
 
-// GET api/usuario/facturas
-router.get('/facturas', usuarioController.facturas);
+// GET api/usuario/carrito
+router.get('/carrito/:id_user', usuarioController.carrito);
+
+// GET api/usuario/facturas/:id_user
+router.get('/facturas/:id_user', usuarioController.facturas);
 
 module.exports = router;

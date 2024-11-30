@@ -1,0 +1,628 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*Para telefonos*/
+@media screen and (max-width: 767px) {  
+    body{
+        background-image: url(../../otros/ajaj.jpg);
+    }
+
+    header{
+        background-color: #000000;
+    }
+
+    #headerDiv{
+        color: #ebebeb;
+        width: 375px;
+        height: 60px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #headerDiv input{
+        width: 90px;
+        height: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 9px;
+        color: rgb(0, 0, 0);
+        margin-right: 20px;
+        border-radius: 2px;
+    }
+
+    #headerDiv h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 19px;
+        margin-right: 30px
+    }
+
+    #headerDiv .p{
+        display: none;
+    }
+
+    #headerDiv .p::after {
+        content: " | "; 
+        margin-left: 3px;
+        margin-right: 3px;
+        color: lightgray; 
+    }
+
+    #headerDiv img{
+        width: 35%;
+    }
+    
+    #pobre{
+        display: none;
+    }
+
+    .UsuarioInfo{
+        color: #dd9611;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    #iconoUsuario{
+        color: #ffffff;
+        font-size: 130%;
+        margin-right: 10px;
+    }
+
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 85px 0;
+    }
+
+    #contenedor img{
+        width: 25%;
+    }
+
+    #contenedor h2{
+        font-family: 'Monserrat', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+
+
+    #footer{
+        background-color: #000000;
+        height: 250px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 340px;
+        display: flex;
+        margin: 0px auto;
+        align-items: center;
+        flex-direction: column;
+        color: #ebebeb;
+    }
+
+    #footer-div img{
+        width: 65%;
+        margin: 0px 23px;
+    }
+
+    #footer-div p{
+        margin-top: 20px;
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 7px;
+    }
+
+    #footer-div::after{
+        content: "___________________";
+        color: #ebebeb;
+    }
+
+    #footer-section p{
+        text-align: center;
+    }
+
+    .boton-flotante{
+        position: fixed; 
+        bottom: 20px;
+        right: 20px; 
+        background-color: #000000; 
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        padding: 15px 20px;
+        font-size: 16px; 
+        font-family:  "Montserrat", sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: background-color 0.3s;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+/*Para Tablets*/
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url(../../otros/martin-martz-wr9mf7S6bRQ-unsplash.jpg);
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+    }
+
+    header{
+        background-color: #000000;
+    }
+
+    #headerDiv{
+        color: #ebebeb;
+        width: 684px;
+        height: 70px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #headerDiv input{
+        width: 90px;
+        height: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 9px;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+
+    #headerDiv h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        margin-right: 16px
+    }
+
+    #headerDiv a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit
+    }
+
+    #headerDiv p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    #headerDiv .p::after {
+        content: " | "; 
+        margin-left: 3px;
+        margin-right: 3px;
+        color: lightgray; 
+    }
+
+    #headerDiv img{
+        width: 20%;
+    }
+
+
+    #usuarioDiv{
+        justify-content: right;
+        align-items: center;
+    }
+
+    .UsuarioInfo{
+        color: #dd9611;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    #iconoUsuario{
+        color: #ffffff;
+        font-size: 130%;
+        margin-right: 10px;
+    }
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 72.5px 0;
+    }
+
+    #contenedor img{
+        width: 13%;
+    }
+
+    #contenedor h2{
+        font-family: 'Monserrat', sans-serif;
+        color: white;
+    }
+
+    #footer{
+        background-color: #000000;
+        height: 76px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 684px;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        color: #ebebeb;
+    }
+
+    #footer-div *{
+        margin: 7px 4px;
+    }
+
+    #footer-div img{
+        width: 13%;
+        margin: 0px 23px;
+    }
+
+    #footer-div p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 7px;
+    }
+
+    .boton-flotante{
+        position: fixed; 
+        bottom: 20px;
+        right: 20px; 
+        background-color: #000000; 
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        padding: 15px 20px;
+        font-size: 16px; 
+        font-family:  "Montserrat", sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: background-color 0.3s;
+    }
+    
+}
+
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+/* Para Desktop */
+@media screen and (min-width: 1024px){ 
+
+    body{
+        background-image: url(../../otros/martin-martz-wr9mf7S6bRQ-unsplash.jpg);
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+        font-family: 'Monserrat', sans-serif;
+    }
+
+    header{
+        background-color: #000000;
+    }
+
+    #headerDiv{
+        color: #ebebeb;
+        width: 940px;
+        height: 90px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #headerDiv input{
+        width: 120px;
+        height: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+    }
+
+    #headerDiv h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        margin-right: 80px
+    }
+
+    #headerDiv p{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+    }
+
+    #headerDiv .p::after {
+        content: " | "; 
+        margin-left: 15px;
+        margin-right: 15px;
+        color: lightgray; 
+    }
+
+    #headerDiv img{
+        width: 20%;
+    }
+
+    main {
+        display: flex; 
+        flex-direction: row;
+        height: 67.8vh; 
+        
+    }
+
+    #section-izq {
+        width: 50%;  
+        height: 100%;
+        padding: 15px;
+        overflow-y: auto;
+    }
+
+    #scroll-container1 {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 30px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 5px 6px;
+    }
+
+    .article-izq{
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        padding: 20px;
+        margin: 10px 0; 
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 300px;
+        width: 35%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section-der {
+        width: 50%; 
+        height: 100%;
+        padding: 15px;
+        overflow-y: auto; 
+    }
+
+    #scroll-container2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 30px;
+    }
+
+    .article-der {
+        background-color: #e0e0e0;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: auto;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .product-name, .product-price, .product-subtotal, .product-cantidad {
+        font-size: 10px;
+    }
+
+    .article-izq img{
+        width: 85%;
+        box-shadow: 12px 12px #000000;
+    }
+    .article-izq p::before, 
+    .article-izq p::after{
+        content: "-";
+        color: #000000;
+    }
+
+    .article-izq p{
+        text-align: center;
+        color: #3b0e0e;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contenedor img{
+        width: 13%;
+    }
+
+    #contenedor h2{
+        font-family: 'Monserrat', sans-serif;
+        color: white;
+    }
+
+    #presentacion{
+        width: 41.6%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 25px;
+        background-color: #222222;
+        border-radius: 8px;
+        position: absolute;
+    }
+
+    #presentacion p{
+        font-weight: bolder;
+        color: #ffffff;
+    }
+
+    #medio{
+        margin-top: 90px;
+        height: 100%;
+    }
+
+    #fin p{
+        margin-left: 6px;
+    }
+
+    #fin{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #quieroDormirDiosMio{
+        margin-left: 50px;
+        margin-right: 6px;
+        color: #ffffff;
+    }
+
+    button i{
+        color: #000000;
+        background-color: none;
+    }
+
+    #iconoUsuario{
+        color: #000000;
+    }
+
+    #footer{
+        background-color: #000000;
+        height: 90px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 940px;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        color: #ebebeb;
+    }
+
+    #footer-div *{
+        margin: 10px 6px;
+    }
+
+    #footer-div img{
+        width: 15%;
+        margin: 0px 30px;
+    }
+
+    #footer-div p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .boton-flotante{
+        position: fixed; 
+        bottom: 20px;
+        right: 20px; 
+        background-color: #000000; 
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        padding: 15px 20px;
+        font-size: 16px; 
+        font-family:  "Montserrat", sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: background-color 0.3s;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturas</title>
+    <link rel="stylesheet" href="css/facturas.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onload="getUsuario(), cargarFacturas()">
+    <header>
+        <section id="header-section">
+            <img src="../otros/log1.jpg" alt="logo.jpeg">
+            <h1>Libreria</h1>
+            <a href="../index.html"><p class="p">Home</p></a>
+            <a href="../catalogo/catalogo.html"><p class="p">Catálogo</p></a>
+            <a href="attCliente/attCliente.html"><p class="p">Atención al Cliente</p></a>
+            <input type="button" value="Iniciar Sesión" onclick="iniciarSesion()">
+        </section>
+    </header>
+    <main id="main-conteiner">
+        <h1>Tus Pedidos Realizados</h1>
+        <section id="main-conteiner2">
+        </section>
+    </main>
+    <footer id="footer">
+        <div id="footer-div">
+            <p>@2024 VIBES Libreria. All Rights Reserves</p>
+            <img src="../otros/log2.jpg" alt="logo.png">
+            <section id="footer-section">
+                <p>Horarios de Atencion</p>
+                <p>Atencion al Cliente</p>
+                <p>¿Quienes somos?</p>
+            </section>
+        </div>
+    </footer>
+    <script src="js/facturas.js"></script>
+</body>
+</html>

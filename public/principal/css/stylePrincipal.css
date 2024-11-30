@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 * {
     box-sizing: border-box;
 }
@@ -45,21 +47,35 @@
         margin-right: 60px
     }
 
-    #headerDiv p{
+    #headerDiv a{
         display: none;
+        text-decoration: none;
+        color: inherit
     }
 
-    #headerDiv p::after {
+    #headerDiv .p::after {
         content: " | "; 
         margin-left: 3px;
         margin-right: 3px;
         color: lightgray; 
     }
 
+    #iconoUsuario{
+        margin-right: 16px;
+    }
+
     #headerDiv img{
         width: 35%;
     }
 
+    .UsuarioInfo{
+        color: #dd9611;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+        font-weight: 700;
+    }
 
     #principal{
         width: 375px;
@@ -307,13 +323,15 @@
         margin-right: 40px
     }
 
-    #headerDiv p{
+    #headerDiv a{
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
         font-size: 13px;
+        text-decoration: none;
+        color: inherit
     }
 
-    #headerDiv p::after {
+    #headerDiv .p::after {
         content: " | "; 
         margin-left: 3px;
         margin-right: 3px;
@@ -324,6 +342,14 @@
         width: 20%;
     }
 
+    .UsuarioInfo{
+        color: #dd9611;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+        font-weight: 700;
+    }
 
     #principal{
         width: 684px;
@@ -380,6 +406,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 30px;
     }
 
     #principal-dos h2{
@@ -542,20 +569,40 @@
         margin-right: 80px
     }
 
-    #headerDiv p{
+    #headerDiv a{
         font-family: "Montserrat", sans-serif;
         font-weight: bold;
+        text-decoration: none;
+        color: inherit
     }
 
-    #headerDiv p::after {
+    #headerDiv .p::after {
         content: " | "; 
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 35px;
+        margin-right: 35px;
         color: lightgray; 
     }
 
     #headerDiv img{
         width: 20%;
+    }
+
+    #usuarioDiv{
+        justify-content: right;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .UsuarioInfo{
+        color: #dd9611;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+    }
+
+    #iconoUsuario{
+        font-size: 170%;
     }
 
 

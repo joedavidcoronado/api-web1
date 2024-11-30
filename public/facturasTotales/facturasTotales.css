@@ -1,0 +1,778 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+    header{
+        background-color: #000000;
+    }
+
+    #header-section{
+        color: #ebebeb;
+        width: 375px;
+        height: 60px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #header-section input{
+        width: 90px;
+        height: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 9px;
+        color: rgb(0, 0, 0);
+        margin-right: 20px;
+    }
+
+    #header-section h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 19px;
+        margin-right: 20px
+    }
+
+    #header-section a{
+        display: none;
+        text-decoration: none;
+        color: inherit
+    }
+
+    #header-section .p::after {
+        content: " | "; 
+        margin-left: 3px;
+        margin-right: 3px;
+        color: lightgray; 
+    }
+
+    #header-section img{
+        width: 35%;
+    }
+
+    .UsuarioInfo{
+        font-size: 13px;
+        color:#dd9611;
+        text-align: right;
+        margin: 0;
+        margin-right: 10px;
+        font-family: 'Monserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    #iconoUsuario{
+        margin-right: 15px;
+    }
+
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #catalogo-uno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #catalogo-uno input[type = "submit"]{
+        height: 30px;
+        margin: 0 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        border: none;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+
+    #catalogo-uno input[type = "text"]{
+        width: 230px;
+        height: 30px;
+        margin: 0 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        border: none;
+        background-color: #ffffff;
+        border-radius: 8px;
+    }
+
+
+    #catalogo-dos{
+        display: flex;
+        justify-content: space-between;
+        background-color: #000000;
+        flex-direction: column;
+    }
+
+    #catalogo-dos article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 05px;
+    }
+
+    #catalogo-dos h2{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    #catalogo-dos h2::after,
+    #catalogo-dos h2::before{
+        content: "____";
+        color: #ebebeb;
+    }
+
+    #catalogo-dos input{
+        width: 21%;
+        height: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin: 0px 07px 20px 7px;
+        border-radius: 3px;
+    }
+
+    #catalogo-tres{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .tres-producto {
+        width: 285px;
+        background-color: #dadada;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    }
+
+    .tres-producto img{
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .tres-producto h2{
+        font-family:  "Montserrat", sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .tres-producto p{
+        font-family:  "Montserrat", sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 0;
+        text-align: center; 
+    }
+
+    .tres-producto input{
+        width: 50%;
+        height: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin: 7px 07px;
+        border-radius: 3px;
+    }
+
+    #footer{
+        background-color: #000000;
+        height: 250px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 340px;
+        display: flex;
+        margin: 0px auto;
+        align-items: center;
+        flex-direction: column;
+        color: #ebebeb;
+    }
+
+    #footer-div img{
+        width: 65%;
+        margin: 0px 23px;
+    }
+
+    #footer-div p{
+        margin-top: 20px;
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 7px;
+    }
+
+    #footer-div::after{
+        content: "___________________";
+        color: #ebebeb;
+    }
+
+    #footer-section p{
+        text-align: center;
+    }
+
+    .boton-flotante{
+        position: fixed; 
+        bottom: 20px;
+        right: 20px; 
+        background-color: #000000; 
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        padding: 15px 20px;
+        font-size: 16px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+/*Para Tablets*/
+@media screen and (min-width: 768px) {
+
+    #header-section{
+        color: #ebebeb;
+        width: 684px;
+        height: 70px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #header-section input{
+        width: 90px;
+        height: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 9px;
+        color: rgb(0, 0, 0);
+        margin-right: 20px;
+    }
+
+    #header-section h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        font-size: 26px;
+        margin-right: 16px
+    }
+
+    #header-section a{
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        text-decoration: none;
+        color: inherit
+    }
+
+    #header-section .p::after {
+        content: " | "; 
+        margin-left: 2px;
+        margin-right: 2px;
+        color: lightgray; 
+    }
+
+    #header-section img{
+        width: 20%;
+    }
+
+    .UsuarioInfo{
+        font-size: 13px;
+        color:#dd9611;
+        text-align: right;
+        margin: 0;
+        margin-right: 10px;
+        font-family: 'Monserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    #iconoUsuario{
+        margin-right: 7px;
+    }
+
+
+    #main-conteiner{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #catalogo-uno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    #catalogo-uno input[type = "submit"]{
+        height: 30px;
+        margin: 0 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+        border: none;
+        background-color: #ffffff;
+        border-radius: 2px;
+    }
+
+    #catalogo-uno input[type = "text"]{
+        width: 600px;
+        height: 30px;
+        margin: 0 10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        border: none;
+        background-color: #ffffff;
+        border-radius: 8px;
+    }
+
+    #catalogo-dos{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 20px;
+        border-radius: 10px;
+        background-image: url(../../otros/descarga.jpeg);
+    }
+
+    #catalogo-dos article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 05px;
+    }
+
+    #catalogo-dos h2{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+
+    #catalogo-dos h2::after,
+    #catalogo-dos h2::before{
+        content: "__________";
+        color: #ebebeb;
+    }
+
+    #catalogo-dos input{
+        width: 10%;
+        height: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 10px;
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin: 0px 07px 20px 7px;
+        border-radius: 3px;
+    }
+
+    #catalogo-tres{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .tres-producto {
+        width: 285px;
+        background-color: #dadada;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0px;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+    }
+
+    .tres-producto img{
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .tres-producto h2{
+        font-family:  "Montserrat", sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .tres-producto p{
+        font-family:  "Montserrat", sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 0;
+        text-align: center; 
+    }
+
+    .tres-producto input{
+        width: 50%;
+        height: 30px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: black;
+        background-color: white;
+        border: 0px;
+        margin: 7px 07px;
+        border-radius: 3px;
+    }
+
+    #footer{
+        background-color: #000000;
+        height: 76px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 684px;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        color: #ebebeb;
+    }
+
+    #footer-div *{
+        margin: 7px 4px;
+    }
+
+    #footer-div img{
+        width: 13%;
+        margin: 0px 23px;
+    }
+
+    #footer-div p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 7px;
+    }
+
+    #footer-div::after{
+        content: "";
+        color: #ebebeb;
+    }
+
+
+    .boton-flotante{
+        position: fixed; 
+        bottom: 20px;
+        right: 20px; 
+        background-color: #000000; 
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        padding: 15px 20px;
+        font-size: 16px; 
+        font-family:  "Montserrat", sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: background-color 0.3s;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+
+
+
+
+
+
+
+
+
+/*Para Desktop*/
+@media screen and (min-width: 1024px) {
+
+    body{
+        background-image: url('../img/pexels-steve-12604731.jpg');
+        background-repeat: repeat-y repeat-x;
+        background-size: cover;
+        font-family: 'Monserrat', sans-serif;
+    }
+
+    #header-section{
+        color: #ebebeb;
+        width: 940px;
+        height: 90px;
+        margin: 0px auto;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #header-section input{
+        width: 120px;
+        height: 35px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: bolder;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+    }
+
+    #header-section h1{  
+        font-family: "Montserrat", sans-serif;
+        font-weight: normal;
+        margin-right: 80px
+    }
+
+    #header-section a{
+        font-family: "Montserrat", sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: inherit
+    }
+
+    #header-section .p::after {
+        content: " | "; 
+        margin-left: 15px;
+        margin-right: 15px;
+        color: lightgray; 
+    }
+
+    #header-section img{
+        width: 20%;
+    }
+
+    #usuarioDiv{
+        justify-content: right;
+        align-items: center;
+    }
+
+    .UsuarioInfo{
+        color: #dd9611;
+        font-family: 'Monserrat', sans-serif;
+        font-size: 15px;
+        margin: 0;
+        text-align: right;
+        font-weight: 700;
+    }
+
+    #iconoUsuario{
+        color: #ffffff;
+        font-size: 170%;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #main-conteiner2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; 
+        overflow-x: auto; 
+        width: 100%;
+        height: 53.5vh;
+        padding: 0 30px;
+        box-sizing: border-box; 
+    }
+    
+    .articulo {
+        background-color: #e7e5e5;
+        background-size: cover;
+        width: 420px;
+        height: 270px;
+        padding: 13px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+        margin: 0 20px;
+        flex-shrink: 0;
+    }
+
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #contenedor img{
+        width: 36%;
+    }
+
+ 
+    #usuarioDiv{
+        margin-left: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    #footer{
+        background-color: #000000;
+        height: 90px;
+        margin: 0px auto;
+    }
+
+    footer div{
+        width: 940px;
+        display: flex;
+        margin: 0px auto;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        color: #ebebeb;
+    }
+
+    #footer-div *{
+        margin: 10px 6px;
+    }
+
+    #footer-div img{
+        width: 15%;
+        margin: 0px 30px;
+    }
+
+    #footer-div p{
+        font-family:  "Montserrat", sans-serif;
+        color: white;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    #footer-div section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+
+    .boton-flotante{
+        position: fixed; 
+        bottom: 20px;
+        right: 20px; 
+        background-color: #000000; 
+        color: white;
+        border: none; 
+        border-radius: 50px;
+        padding: 15px 20px;
+        font-size: 16px; 
+        font-family:  "Montserrat", sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: background-color 0.3s;
+    }
+
+}

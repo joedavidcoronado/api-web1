@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body onload="getUsuario(), cargarPedido()">
+    <header>
+        <div id="headerDiv">
+            <img src="../otros/log1.jpg" alt="logo.jpeg">
+            <h1>Libreria</h1>
+            <a href="../index.html"><p>Home</p></a>
+            <a href="../catalogo/catalogo.html"><p>Catálogo</p></a>
+            <a href="attCliente/attCliente.html"><p>Atención al Cliente</p></a>
+            <input type="button" value="Iniciar Sesión" onclick="iniciarSesion()">
+        </div>
+    </header>
+    <main id="main">
+    </main>
+    <footer id="footer">
+        <div id="footer-div">
+            <p>@2024 VIBES Libreria. All Rights Reserves</p>
+            <img src="../otros/log2.jpg" alt="logo.png">
+            <section id="footer-section">
+                <p>Horarios de Atencion</p>
+                <p>Atencion al Cliente</p>
+                <p>¿Quienes somos?</p>
+            </section>
+        </div>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>
